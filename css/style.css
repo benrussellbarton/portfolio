@@ -1,0 +1,274 @@
+body {
+  font-family: "Overpass", "Open Sans", "Helvetica", sans-serif;
+  background-color: black;
+}
+
+h1, h2, h3 {
+  font-family: "Overpass", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+a:hover {
+  color: darkgrey;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h5 {
+  color: white;
+  font-family: "Overpass", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.nav-icon {
+  font-size: 0.8em;
+  color: white;
+  margin: 3px 0 10px 0;
+}
+
+.nav-icon:hover {
+  color: #eb8242 !important;
+  transform: scale(1.02);
+}
+
+.radius {
+  border-radius: 6px;
+}
+
+.em {
+  font-size: 1.6em;
+}
+
+.para-em {
+  font-size: 1.05em;
+}
+
+.close {
+  color: #fff;
+  opacity: 1;
+}
+
+.close:hover {
+  color: #E8E8E8;
+}
+
+.modal-content {
+  background-color: #202020;
+}
+
+.modal-header {
+  background-color: #2E2E2E;
+  border-bottom: 0 none;
+}
+
+.modal-body {
+  background-color: #202020;
+}
+
+.bg-transparent {
+  background: transparent;
+}
+
+.sub {
+  font-size: 2.2em;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 30px;
+  letter-spacing: 10px;
+}
+
+.title {
+  font-size: 1.6em;
+  text-align: center;
+  margin: 30px 0;
+  letter-spacing: 10px;
+}
+
+.fab, .fas {
+  font-size: 2.4em;
+}
+
+.vt {
+  font-family: 'VT323', monospace;
+  letter-spacing: 6px;
+  font-weight: lighter;
+}
+
+.overpass {
+  font-family: "Overpass", "Open Sans", "Helvetica", sans-serif;
+}
+
+#alata {
+  font-family: 'Alata', sans-serif;
+  text-transform: lowercase;
+  font-size: 2.4em;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.whitefont {
+  color: #FAFAFA;
+}
+
+.greyfont {
+  color: #c4c4c4;
+}
+
+.mark {
+  background-color: #eb8242;
+}
+
+.orangefont {
+  color: #eb8242;
+}
+
+.darkgrey_background {
+  background-image: url("../images/layout/grain-light.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.black_background {
+  background-color: #0E0E0E;
+}
+
+.title {
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  letter-spacing: 8px;
+}
+
+#name {
+  font-size: 17px;
+  font-family: "Overpass", sans-serif;
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 6px;
+  vertical-align: middle;
+  display: inline;
+}
+
+.navtext {
+  font-size: 13px;
+  font-family: "Overpass", sans-serif;
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 3px;
+  transition: all .1s ease-in-out;
+}
+
+.navtext:hover {
+  color: #eb8242 !important;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.fullscreen {
+  height: 100vh;
+  background-image: url("../images/layout/brb-glitch.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.box {
+  background-color: black;
+  padding: 40px;
+}
+
+.img_wrap {
+  width: 100%;
+}
+
+.img_description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  color: white;
+  padding: 50px;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  visibility: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img_wrap:hover .img_description {
+  opacity: 1;
+  background-color: rgba(0,0,0,0.8);
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  visibility: visible;
+  /*cursor: pointer;*/
+}
+
+.top_left_card {
+  border-top-left-radius: 6px;
+}
+
+.top_right_card {
+  border-top-right-radius: 6px;
+}
+
+.bottom_left_card {
+  border-bottom-left-radius: 6px;
+}
+
+.bottom_right_card {
+  border-bottom-right-radius: 6px;
+}
+
+@media(max-width:991px) {
+  .darkgrey_background {
+    background-image: none;
+    background-color: #202020;
+  }
+}
+
+@media(max-width:767px) {
+  .top_left_card {
+    border-top-right-radius: 6px;
+  }
+  .top_middle_card {
+    border-top-right-radius: 6px;
+  }
+  .bottom_right_card {
+    border-bottom-left-radius: 6px;
+  }
+  .bottom_left_card {
+    border-bottom-left-radius: 0;
+  }
+}
+
+@media(max-width:992px) {
+    .top_middle_card {
+    border-top-right-radius: 0;
+  }
+    .top_right_card {
+    border-top-right-radius: 0;
+  }
+}
+
+@media (max-width:992px) and (min-width:767px) {
+  .top_middle_card {
+    border-top-right-radius: 6px;
+  }
+  .bottom_middle_card {
+    border-bottom-left-radius: 6px;
+  }
+}​
