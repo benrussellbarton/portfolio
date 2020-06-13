@@ -1,2 +1,1 @@
-# portfolio
-Ben Barton Portfolio
+https://benrussellbarton.github.io/portfolio/
